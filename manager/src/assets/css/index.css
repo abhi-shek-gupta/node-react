@@ -1,0 +1,112 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+
+.margin-top-container{
+    margin-top: 2px !important;
+}
+.min-heigh{
+    min-height: 200px;
+}
+.login .content {
+    background-color: #fff;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+    border-radius: 7px;
+    width: 400px;
+    margin: 40px auto 10px;
+    padding: 10px 30px 30px;
+    overflow: hidden;
+    position: relative;
+}
+
+.menu-item a{    
+    color: gray !important;
+    padding: 5px 10px;
+    font-size: 13px;
+    display:block;
+}
+
+.user-icon{
+       height: 35px !important;
+    width: 35px !important;
+    max-width: none !important;
+    border-radius: 50% !important;
+    margin-right: -5px !important;
+    margin-top: -5px;
+}
+
+/* LODER CSS START */
+.loader{
+      position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.8);
+    
+}
+.loader>div{
+
+      position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    width: 100px;
+    height: 221px;
+}
+
+.lds-ripple {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-ripple div {
+  position: absolute;
+  border: 6px solid #7aaf8a;
+  opacity: 1;
+  border-radius: 50%;
+  animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+.lds-ripple div:nth-child(2) {
+  animation-delay: -0.5s;
+}
+@keyframes lds-ripple {
+  0% {
+    top: 36px;
+    left: 36px;
+    width: 0;
+    height: 0;
+    opacity: 1;
+  }
+  100% {
+    top: 0px;
+    left: 0px;
+    width: 72px;
+    height: 72px;
+    opacity: 0;
+  }
+}
+/* LODER CSS END */
+
+/**ASYNC LOADER*/
+.async-validating{position: relative;}
+.async-validating:after {
+    content: '';
+    position: absolute;
+    top: 7px;
+    right: 7px;
+    z-index: 200;
+    height: 16px;
+    width: 16px;
+    background-image: url('../innerloader.gif');
+}

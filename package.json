@@ -1,0 +1,30 @@
+{
+  "name": "admin-panel",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "nodemon": "nodemon server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "babel-core": "^6.26.0",
+    "body-parser": "^1.18.2",
+    "cors": "^2.8.4",
+    "crypto": "^1.0.1",
+    "dotenv": "^5.0.0",
+    "express": "^4.16.2",
+    "express-jwt": "^5.3.0",
+    "fs": "0.0.1-security",
+    "gulp-install": "^1.1.0",
+    "helmet": "^3.11.0",
+    "mongoose": "^5.0.4",
+    "mongoose-unique-validator": "^2.0.0",
+    "morgan": "^1.9.0",
+    "nodemailer": "^4.4.2",
+    "nodemailer-express-handlebars": "^3.0.0",
+    "nodemailer-sendgrid-transport": "^0.2.0"
+  }
+}
